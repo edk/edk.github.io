@@ -1,0 +1,682 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>The Joy Of Ruby And Rails - edk Blogs</title>
+<meta name="description" content="One thing that my curmudgeonly-self has had issues with lately (the past few years) is the pain I feel when dealing with the JS ecosystem.">
+
+
+  <meta name="author" content="edk">
+  
+  <meta property="article:author" content="edk">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="edk Blogs">
+<meta property="og:title" content="The Joy Of Ruby And Rails">
+<meta property="og:url" content="https://edk.github.io/personal/the-joy-of-ruby-and-rails/">
+
+
+  <meta property="og:description" content="One thing that my curmudgeonly-self has had issues with lately (the past few years) is the pain I feel when dealing with the JS ecosystem.">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2021-11-03T00:00:00+00:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://edk.github.io/personal/the-joy-of-ruby-and-rails/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "edk",
+      "url": "https://edk.github.io/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="edk Blogs Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="http://www.gravatar.com/avatar/94235e92ecebef654b5d1ac4c6c1889b" alt="edk Blogs"></a>
+        
+        <a class="site-title" href="/">
+          edk Blogs
+          <span class="site-subtitle">Version 2 of my blog and life</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/changelog">SiteChangelog</a>
+            </li><li class="masthead__menu-item">
+              <a href="/sitemap.xml">Sitemap</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="https://edk.github.io/">
+        <img src="/assets/images/128-2843_IMG-2.JPG" alt="edk" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="https://edk.github.io/" itemprop="url">edk</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>Techie, motorcyclist, poopie-head</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">SF Bay area</span>
+        </li>
+      
+
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="The Joy Of Ruby And Rails">
+    <meta itemprop="description" content="One thing that my curmudgeonly-self has had issues with lately (the past few years) isthe pain I feel when dealing with the JS ecosystem.">
+    <meta itemprop="datePublished" content="2021-11-03T00:00:00+00:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="https://edk.github.io/personal/the-joy-of-ruby-and-rails/" class="u-url" itemprop="url">The Joy Of Ruby And Rails
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2021-11-03T00:00:00+00:00">November 3, 2021</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#some-highlights">Some highlights:</a></li><li><a href="#and-now-to-my-rant">And now to my rant.</a></li><li><a href="#why-the-rant">Why the rant?</a></li></ul>
+
+            </nav>
+          </aside>
+        
+        <p><img src="/assets/images/3249945_0.webp" />
+One thing that my curmudgeonly-self has had issues with lately (the past few years) is
+the pain I feel when dealing with the JS ecosystem.</p>
+
+<p>Let me give some background to explain.  I’ve been using Ruby and Rails for over 10
+years now.  I originally found it when searching for an alternative stack to
+the existing business code I had written in PHP.</p>
+
+<p>Ruby was a breath of fresh air.  Of all the delightful discoveries I made
+while learning about Ruby (the language), and then Rails (the web-dev framework)
+was the philosophy behind them.</p>
+
+<h3 id="some-highlights">Some highlights:</h3>
+<ul>
+  <li><a href="https://www.artima.com/articles/the-philosophy-of-ruby">Philosophy of Ruby from the creator Matz</a>
+    <ul>
+      <li>“For me the purpose of life is partly to have joy. Programmers often feel joy when they can concentrate on the creative side of programming, So Ruby is designed to make programmers happy.”</li>
+      <li>“You want to enjoy life, don’t you? If you get your job done quickly and your job is fun, that’s good isn’t it? That’s the purpose of life, partly. Your life is better.” - Matz</li>
+    </ul>
+  </li>
+  <li><a href="https://rubyonrails.org/doctrine/">The philosophy of Rails, much like the intent of Ruby</a>
+    <ul>
+      <li>“Optimize for programmer happiness”</li>
+      <li>“Exalt beautiful code” (this one is tough, I appreciate it, but struggle to do it)</li>
+    </ul>
+  </li>
+</ul>
+
+<p>I appreciate the intent behind these.  At least for small scale, and arguably big
+scale software projects, happiness of the people building seems like something
+noble to strive for.</p>
+
+<h3 id="and-now-to-my-rant">And now to my rant.</h3>
+
+<p>There are good things about JS the language, the Node ecosystem, and especially
+the body of collective work done in this stack.</p>
+
+<p>However, the sheer speed, (needless) complexity, and poor or un-ergonomic choices
+make for a near constant grating and cognitive load that I haven’t inflicted on
+myself in many years.</p>
+
+<h3 id="why-the-rant">Why the rant?</h3>
+
+<p>Dealing with JS and the front-end after not doing that much of it for the past few
+years is making me come to grips with a whole new stack.  I thought I knew JS before,
+but not like this.</p>
+
+<p>While there may be potential hope on the horizon with Hotwire and stimulus, they’re
+still bleeding edge, and changing rapidly.  While playing around with stimulus
+and the fantastic book, <a href="https://pragprog.com/titles/nrclient/modern-front-end-development-for-rails/">Modern Front-End Development for Rails</a>
+I got that bleeding-edge feeling, where very few resources are available, and the
+quality and accuracy of the information varied greatly.</p>
+
+<p>Oh well, hopefully it stabilizes.  I’ll keep plugging away at it.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#personal" class="page__taxonomy-item p-category" rel="tag">personal</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2021-11-03T00:00:00+00:00">November 3, 2021</time></p>
+
+      </footer>
+
+      
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/personal/followup-tailwind-and-status/" class="pagination--pager" title="Followup Tailwind And Status
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h2 class="page__related-title">You may also enjoy</h2>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/personal/followup-tailwind-and-status/" rel="permalink">Followup Tailwind And Status
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2021-11-03T00:00:00+00:00">November 3, 2021</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Not that anyone cares, I’m doing this as a kind of public journal and a way
+to keep myself honest, and continue to post, even when not much of note has
+happe...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/personal/the-joy-of-ruby-and-rails/" rel="permalink">The Joy Of Ruby And Rails
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2021-10-20T00:00:00+00:00">October 20, 2021</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/personal/omg-so-slow/" rel="permalink">Omg So Slow
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2021-10-19T00:00:00+00:00">October 19, 2021</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Just a short rant, and incredulity.  I must be doing something wrong, because why would
+anyone willingly put up with slow build times?
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/personal/benchmarking-io/" rel="permalink">Benchmarking Io
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2021-10-08T00:00:00+00:00">October 8, 2021</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">The main reason to upgrade my networking speed is to see improved throughput and latencies (duh).
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+      <li><strong>Follow:</strong></li>
+
+      
+        
+      
+        
+      
+        
+          <li><a href="https://github.com/edk" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+      
+        
+      
+        
+      
+
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 edk. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

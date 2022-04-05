@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://edk.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://edk.github.io/" rel="alternate" type="text/html" /><updated>2022-04-05T16:16:21+00:00</updated><id>https://edk.github.io/feed.xml</id><title type="html">edk Blogs</title><subtitle>random musings and word droppings</subtitle><author><name>edk</name></author><entry><title type="html">Followup Tailwind And Status</title><link href="https://edk.github.io/personal/followup-tailwind-and-status/" rel="alternate" type="text/html" title="Followup Tailwind And Status" /><published>2021-11-03T00:00:00+00:00</published><updated>2021-11-03T00:00:00+00:00</updated><id>https://edk.github.io/personal/followup-tailwind-and-status</id><content type="html" xml:base="https://edk.github.io/personal/followup-tailwind-and-status/">&lt;p&gt;Not that anyone cares, I’m doing this as a kind of public journal and a way
+to keep myself honest, and continue to post, even when not much of note has
+happened.&lt;/p&gt;
+
+&lt;h2 id=&quot;tailwindcss&quot;&gt;tailwindcss&lt;/h2&gt;
+&lt;p&gt;For some reason, I wasn’t able to find a super quick feedback cycle that I was
+happy with, with the node-based solutions to working with tailwind.  I didn’t
+try the full bare-bones, tailwind cli, as I’m not sure how to integrate that
+into my jekyll setup.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-solution&quot;&gt;The solution&lt;/h3&gt;
+&lt;p&gt;One thing that I did find acceptable, was to use a rails 6 app, using both
+webpacker and asset pipeline.  While changes to the base css files were non-
+instantaneous, fast feedback cycles are achievable by using sprokets/asset
+pipeline, and guard to auto reload (along with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rack-livereload&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;guard-livereload&lt;/code&gt;)
+and then move or refactor to the css files once things look reasonable.&lt;/p&gt;
+
+&lt;p&gt;The goal is to hit save (CTRL-s) and have the browser automatically refresh.
+Saves time, saves wear and tear on your RSI-ridden limbs and keeps you in the zone.&lt;/p&gt;
+
+&lt;p&gt;Lets gooooooooooooo&lt;/p&gt;</content><author><name>edk</name></author><category term="personal" /><summary type="html">Not that anyone cares, I’m doing this as a kind of public journal and a way to keep myself honest, and continue to post, even when not much of note has happened.</summary></entry><entry><title type="html">The Joy Of Ruby And Rails</title><link href="https://edk.github.io/personal/the-joy-of-ruby-and-rails/" rel="alternate" type="text/html" title="The Joy Of Ruby And Rails" /><published>2021-11-03T00:00:00+00:00</published><updated>2021-11-03T00:00:00+00:00</updated><id>https://edk.github.io/personal/the-joy-of-ruby-and-rails</id><content type="html" xml:base="https://edk.github.io/personal/the-joy-of-ruby-and-rails/">&lt;p&gt;&lt;img src=&quot;/assets/images/3249945_0.webp&quot; /&gt;
+One thing that my curmudgeonly-self has had issues with lately (the past few years) is
+the pain I feel when dealing with the JS ecosystem.&lt;/p&gt;
+
+&lt;p&gt;Let me give some background to explain.  I’ve been using Ruby and Rails for over 10
+years now.  I originally found it when searching for an alternative stack to
+the existing business code I had written in PHP.&lt;/p&gt;
+
+&lt;p&gt;Ruby was a breath of fresh air.  Of all the delightful discoveries I made
+while learning about Ruby (the language), and then Rails (the web-dev framework)
+was the philosophy behind them.&lt;/p&gt;
+
+&lt;h3 id=&quot;some-highlights&quot;&gt;Some highlights:&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.artima.com/articles/the-philosophy-of-ruby&quot;&gt;Philosophy of Ruby from the creator Matz&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;“For me the purpose of life is partly to have joy. Programmers often feel joy when they can concentrate on the creative side of programming, So Ruby is designed to make programmers happy.”&lt;/li&gt;
+      &lt;li&gt;“You want to enjoy life, don’t you? If you get your job done quickly and your job is fun, that’s good isn’t it? That’s the purpose of life, partly. Your life is better.” - Matz&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://rubyonrails.org/doctrine/&quot;&gt;The philosophy of Rails, much like the intent of Ruby&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;“Optimize for programmer happiness”&lt;/li&gt;
+      &lt;li&gt;“Exalt beautiful code” (this one is tough, I appreciate it, but struggle to do it)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I appreciate the intent behind these.  At least for small scale, and arguably big
+scale software projects, happiness of the people building seems like something
+noble to strive for.&lt;/p&gt;
+
+&lt;h3 id=&quot;and-now-to-my-rant&quot;&gt;And now to my rant.&lt;/h3&gt;
+
+&lt;p&gt;There are good things about JS the language, the Node ecosystem, and especially
+the body of collective work done in this stack.&lt;/p&gt;
+
+&lt;p&gt;However, the sheer speed, (needless) complexity, and poor or un-ergonomic choices
+make for a near constant grating and cognitive load that I haven’t inflicted on
+myself in many years.&lt;/p&gt;
+
+&lt;h3 id=&quot;why-the-rant&quot;&gt;Why the rant?&lt;/h3&gt;
+
+&lt;p&gt;Dealing with JS and the front-end after not doing that much of it for the past few
+years is making me come to grips with a whole new stack.  I thought I knew JS before,
+but not like this.&lt;/p&gt;
+
+&lt;p&gt;While there may be potential hope on the horizon with Hotwire and stimulus, they’re
+still bleeding edge, and changing rapidly.  While playing around with stimulus
+and the fantastic book, &lt;a href=&quot;https://pragprog.com/titles/nrclient/modern-front-end-development-for-rails/&quot;&gt;Modern Front-End Development for Rails&lt;/a&gt;
+I got that bleeding-edge feeling, where very few resources are available, and the
+quality and accuracy of the information varied greatly.&lt;/p&gt;
+
+&lt;p&gt;Oh well, hopefully it stabilizes.  I’ll keep plugging away at it.&lt;/p&gt;</content><author><name>edk</name></author><category term="personal" /><summary type="html">One thing that my curmudgeonly-self has had issues with lately (the past few years) is the pain I feel when dealing with the JS ecosystem.</summary></entry><entry><title type="html">The Joy Of Ruby And Rails</title><link href="https://edk.github.io/personal/the-joy-of-ruby-and-rails/" rel="alternate" type="text/html" title="The Joy Of Ruby And Rails" /><published>2021-10-20T00:00:00+00:00</published><updated>2021-10-20T00:00:00+00:00</updated><id>https://edk.github.io/personal/the-joy-of-ruby-and-rails</id><content type="html" xml:base="https://edk.github.io/personal/the-joy-of-ruby-and-rails/"></content><author><name>edk</name></author><category term="personal" /><summary type="html"></summary></entry><entry><title type="html">Omg So Slow</title><link href="https://edk.github.io/personal/omg-so-slow/" rel="alternate" type="text/html" title="Omg So Slow" /><published>2021-10-19T00:00:00+00:00</published><updated>2021-10-19T00:00:00+00:00</updated><id>https://edk.github.io/personal/omg-so-slow</id><content type="html" xml:base="https://edk.github.io/personal/omg-so-slow/">&lt;p&gt;Just a short rant, and incredulity.  I must be doing something wrong, because why would
+anyone willingly put up with slow build times?&lt;/p&gt;
+
+&lt;p&gt;Let me back up a bit.&lt;/p&gt;
+
+&lt;p&gt;I was messing around with tailwindcss in a test jekyll project, and I was getting
+used to and liked saving the file and seeing the change instantly with livereload.
+It reminded me of doing rails dev, with livereload, getting in the zone.&lt;/p&gt;
+
+&lt;p&gt;This comes to a screeching halt if I add tailwindcss (and the associated plumbing
+such as postcss).  According the server output, it takes 12 seconds to build
+and empty page using tailwindcss, if installed locally as recommended.  WTH&lt;/p&gt;
+
+&lt;p&gt;I only wanted to play around with tailwind to see if I liked it better than Bootstrap
+or Zurb, but I can’t believe people would willing add a minimum of 10 seconds to
+their build times in dev mode.  I perfectly fine with production builds taking longer.&lt;/p&gt;
+
+&lt;p&gt;So either I’ve done something wrong or people are being slowly boiled alive.&lt;/p&gt;
+
+&lt;p&gt;I’ve currently decided to work around it by just using the cdn version of tailwind,
+at least until I get my legs underneath me for this.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;link href=&quot;https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css&quot; rel=&quot;stylesheet&quot;&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Also lots of fun messing around with various versions of node and yarn on my linux
+install.  Switched to nvm to see if that helps any.  I mean, rvm rocks, so nvm should
+too?&lt;/p&gt;
+
+&lt;p&gt;Wish me luck.&lt;/p&gt;
+
+&lt;p&gt;Edit: 2021-10-20&lt;/p&gt;
+
+&lt;p&gt;It must be me or the specific setup in jekyll.  Tailwindcss is perfectly fine and
+fast in a new rails 6 app with webpack(er).  It did require some tweaking to get
+the Node 8 incompatibility out of the way.  Kinda lame.  But I don’t know the JS
+ecosystem that well, so maybe I’m being overly harsh.  gem and bundler went through
+some immense growing pains early in their development.  It’d be nice if people learned
+from other’s mistakes though.&lt;/p&gt;</content><author><name>edk</name></author><category term="personal" /><summary type="html">Just a short rant, and incredulity. I must be doing something wrong, because why would anyone willingly put up with slow build times?</summary></entry><entry><title type="html">Benchmarking Io</title><link href="https://edk.github.io/personal/benchmarking-io/" rel="alternate" type="text/html" title="Benchmarking Io" /><published>2021-10-08T00:00:00+00:00</published><updated>2021-10-08T00:00:00+00:00</updated><id>https://edk.github.io/personal/benchmarking-io</id><content type="html" xml:base="https://edk.github.io/personal/benchmarking-io/">&lt;p&gt;The main reason to upgrade my networking speed is to see improved throughput and latencies (duh).&lt;/p&gt;
+
+&lt;p&gt;But I want to know, how much does it help in real-world usage?  As I wait to pull the trigger on
+ordering the equipment, my inner-yak-shaver comes out again.&lt;/p&gt;
+
+&lt;p&gt;I’ve used CrystalDiskMark in the past, because it’s pretty popular, at least in the
+Windows arena, and similar alternatives exist for Mac and Linux systems.&lt;/p&gt;
+
+&lt;p&gt;However, I wanted to see if a CLI based system might be more interesting to get the
+data I’m looking for.  &lt;a href=&quot;https://fio.readthedocs.io/en/latest/index.html&quot;&gt;fio&lt;/a&gt; might
+fit the bill.  A windows binary is available, and it’s just an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;apt-get&lt;/code&gt; away on my
+preferred Linux distro, as well as available on MacOS with homebrew.&lt;/p&gt;
+
+&lt;p&gt;With standardized output, I may be able to parse the output and graph/compare
+the results.  Right now, everything is in a google sheet, and it’s super hard to
+compare between different disks and systems.&lt;/p&gt;
+
+&lt;p&gt;There were some minor hiccups getting it to run on Win 10.  Tip: Don’t run it in a
+cygwin shell, and you’ll need to use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--thread&lt;/code&gt; option since forking isn’t available.&lt;/p&gt;</content><author><name>edk</name></author><category term="personal" /><summary type="html">The main reason to upgrade my networking speed is to see improved throughput and latencies (duh).</summary></entry><entry><title type="html">10g Home Networking</title><link href="https://edk.github.io/personal/10g-home-networking/" rel="alternate" type="text/html" title="10g Home Networking" /><published>2021-10-05T00:00:00+00:00</published><updated>2021-10-05T00:00:00+00:00</updated><id>https://edk.github.io/personal/10g-home-networking</id><content type="html" xml:base="https://edk.github.io/personal/10g-home-networking/">&lt;h2 id=&quot;goal&quot;&gt;Goal&lt;/h2&gt;
+&lt;h4 id=&quot;upgrade-from-1g-to-10gbe-in-my-tiny-home-netowrk&quot;&gt;Upgrade from 1G to 10GbE in my tiny home netowrk.&lt;/h4&gt;
+
+&lt;h2 id=&quot;current-setup&quot;&gt;Current Setup&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://smile.amazon.com/gp/product/B08HDPWY96&quot;&gt;Netgate 2100 running pfSense&lt;/a&gt; and a &lt;a href=&quot;https://smile.amazon.com/gp/product/B016XYQ3WK&quot;&gt;UniFi UAP AC-PRO WiFi access point&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;SuperMicro based NAS/media center with i3 cpu, ECC RAM, ZFS filesystem, running containers, including &lt;a href=&quot;https://pi-hole.net&quot;&gt;Pi-hole&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;random netgear and d-link unmanaged switches&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;why&quot;&gt;Why?&lt;/h2&gt;
+
+&lt;p&gt;I switched to the pfSense/UniFi setup once it seemed the old Apple Airport Extreme was getting a little too long in the tooth.  It still worked fine, literally the only networking equipment of its kind to last me over a decade.  Most routers/modems die on me within a few years.  Netgear, d-link, etc, all seem to be poorly made, and worse, insecure and abandoned.  The Airport Extreme still had infrequent firmware updates up until the last couple of years of use, and no hardware hiccups whatsoever.  And I trust the quality of the firewall much more than the consumer grade swill that is pushed out.&lt;/p&gt;
+
+&lt;p&gt;I considered getting a higher end router/wifi AP, and reflashing it with Open-WRT or Tomato firmware, but it seemed like too much work finding the highest quality hardware that was still available and compatible.&lt;/p&gt;
+
+&lt;p&gt;One advantage of a separate router and access point is that the AP can be upgraded independently of the router for when &lt;a href=&quot;https://www.intel.com/content/www/us/en/gaming/resources/wifi-6.html&quot;&gt;Wi-Fi 6&lt;/a&gt; (802.11ax) becomes more widely available.&lt;/p&gt;
+
+&lt;p&gt;So while I wait for that to happen, I find myself wanting to upgrade the speed between my NAS and my other systems.  I’ve been using 1G forever now.  It seemed so fast when I first upgraded from 100Mb to 1G.  Now?&lt;/p&gt;
+
+&lt;p&gt;Ugh.  So.  Slow.&lt;/p&gt;
+
+&lt;p&gt;So let’s upgrade to 10G wired speeds.  100G would be nice, but the price is pretty high
+still.  Will need to wait for that to come down to consumer levels, I think.&lt;/p&gt;
+
+&lt;h2 id=&quot;so-i-need&quot;&gt;So I need&lt;/h2&gt;
+
+&lt;p&gt;A 10GbE switch.  I’d prefer unmanaged, as I don’t really need any of the bells and whistles, but it seems hard to find in this segment.  It’ll probably happen once the prices come down.  1G switches used to be multi-hundred dollars.  Now you can get a cheap one for $40.&lt;/p&gt;
+
+&lt;p&gt;I’d prefer RJ45 connections, to avoid the extra expense and heat from SFP+ transceivers.
+The runs I’m currently in need of are less than 40FT, so simple twisted-pair should be fine.&lt;/p&gt;
+
+&lt;p&gt;However, I need it to be &lt;strong&gt;quiet&lt;/strong&gt;, since it’ll be sitting in my living space a few feet from my head. Aaannd I get super annoyed by most sounds.&lt;/p&gt;
+
+&lt;p&gt;My options:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+  &lt;tr&gt;
+    &lt;th&gt; item &lt;/th&gt;
+    &lt;th&gt; price &lt;/th&gt;
+    &lt;th&gt; ports &lt;/th&gt;
+    &lt;th&gt; notes &lt;/th&gt;
+    &lt;th&gt; links &lt;/th&gt;
+  &lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+    &lt;td&gt;
+    &lt;img src=&quot;/assets/images/MikroTik 12-Port 10G Switch with Dual Power Supply.jpg&quot; style=&quot;height: 5em&quot; /&gt;
+    &lt;a href=&quot;https://smile.amazon.com/gp/product/B07VS1XJZ6&quot;&gt;MikroTik 12-Port 10G Switch with Dual Power Supply CRS312-4C+8XG-RM&lt;/a&gt;
+    &lt;/td&gt;
+    &lt;td&gt;$489&lt;/td&gt;
+    &lt;td&gt;8 10G RJ45, 4 SFP+, 1 1G&lt;/td&gt;
+    &lt;td&gt;noise at 42dba, reviews universally hate admin interface, dual power supply&lt;/td&gt;
+    &lt;td&gt;
+    &lt;a href=&quot;https://mikrotik.com/product/crs312_4c_8xg_rm&quot;&gt;MFG&lt;/a&gt;
+    &lt;a href=&quot;https://www.youtube.com/watch?v=nDiUuJ472yE&quot;&gt;YT&lt;/a&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+
+  &lt;tr&gt;
+   &lt;td&gt;
+    &lt;img src=&quot;/assets/images/CRS309-1G-8S+IN.jpg&quot; style=&quot;height: 5em&quot; /&gt;
+    &lt;a href=&quot;https://smile.amazon.com/gp/product/B07NFXN4SS&quot;&gt;MikroTik 9-Port Desktop Switch, 1 Gigabit Ethernet Port, 8 SFP+ 10Gbps Ports (CRS309-1G-8S+IN)&lt;/a&gt;
+    &lt;/td&gt;
+    &lt;td&gt;$240&lt;/td&gt;
+    &lt;td&gt;8 10GbE, 1 1G&lt;/td&gt;
+    &lt;td&gt;Silent!&lt;/td&gt;
+    &lt;td&gt;
+    &lt;a href=&quot;https://mikrotik.com/product/crs309_1g_8s_in&quot;&gt;MFG&lt;/a&gt;
+    &lt;a href=&quot;https://www.youtube.com/watch?v=3uXSItOyB94&quot;&gt;YT&lt;/a&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+
+  &lt;tr&gt;
+   &lt;td&gt;
+    &lt;a href=&quot;https://smile.amazon.com/gp/product/B07BV2VYVF&quot;&gt;TRENDnet 8-Port 10G EdgeSmart Switch, 8 x 10GBASE-T Ports, Supports 2.5G-5G NBASE-T, 160Gbps Switch Capacity, 1U Rack Mountable, 10G Managed Network Switch, Lifetime Protection, Black, TEG-7080ES&lt;/a&gt;
+    &lt;/td&gt;
+    &lt;td&gt;$675&lt;/td&gt;
+    &lt;td&gt;8 10GbE&lt;/td&gt;
+    &lt;td&gt;quiet maybe? Lots of negative reviews, operational issues. Discontinued according to MFG site&lt;/td&gt;
+    &lt;td&gt;
+    &lt;a href=&quot;https://www.trendnet.com/products/managed-switch/8-Port-10G-EdgeSmart-Switch-TEG-7080ES&quot;&gt;MFG&lt;/a&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+
+  &lt;tr&gt;
+   &lt;td&gt;
+    &lt;a href=&quot;https://smile.amazon.com/gp/product/B07CDJ9YGM&quot;&gt;QNAP QSW-1208-8C-US 12-Port Unmanaged 10GbE Switch Twelve SFP+ with Shared Eight 10GBASE-T Ports&lt;/a&gt;
+    &lt;/td&gt;
+    &lt;td&gt;$620&lt;/td&gt;
+    &lt;td&gt;12 SFP+, 8 SFP+/RJ45 all 10Gb&lt;/td&gt;
+    &lt;td&gt;Silent.  Bad reviews, with lots of operational issues. no ipv6!&lt;/td&gt;
+    &lt;td&gt;&lt;a href=&quot;https://www.qnap.com/en-us/product/qsw-1208-8c&quot;&gt;MFG&lt;/a&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+
+
+  &lt;tr&gt;
+   &lt;td&gt;
+    &lt;a href=&quot;https://smile.amazon.com/gp/product/B08DKSFXNW&quot;&gt;QNAP QSW-M408-4C 10GbE Managed Switch, with 4-Port 10GbE SFP+/RJ45 Combo and 8-Port Gigabit&lt;/a&gt;
+    &lt;/td&gt;
+    &lt;td&gt;$350&lt;/td&gt;
+    &lt;td&gt;4 10GbE SFP+/RJ45, 8 1G RJ45&lt;/td&gt;
+    &lt;td&gt;quiet, overall decent reviews.&lt;/td&gt;
+    &lt;td&gt;&lt;a href=&quot;https://www.qnap.com/en/product/qsw-m408-4c&quot;&gt;MFG&lt;/a&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+
+  &lt;tr&gt;
+   &lt;td&gt;
+    &lt;img src=&quot;/assets/images/ASUS XG-C100C 10G Network Adapte.png&quot; style=&quot;height: 5em&quot; /&gt;
+    &lt;a href=&quot;https://smile.amazon.com/gp/product/B072N84DG6&quot;&gt;ASUS XG-C100C 10G Network Adapter Pci-E X4 Card with Single RJ-45 Port&lt;/a&gt;
+    &lt;/td&gt;
+    &lt;td&gt;$93&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;
+    &lt;a href=&quot;https://www.asus.com/us/Networking-IoT-Servers/Wired-Networking/All-series/XG-C100C/&quot;&gt;MFG&lt;/a&gt;
+    &lt;a href=&quot;https://www.youtube.com/watch?v=8aqzd_jNj_s&quot;&gt;comparing XG-C100C with Intel X550T1 (also $100 vs $330!)&lt;/a&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+
+
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Prices are from amazon.  Until recently, I used to exclusively buy from NewEgg for my
+tech purchases, due to their history of fighting patent trolls (yes, the lawyer
+who spearheaded that left the company long ago).  But now, with the greedy crap
+they’re pulling with GPUs during
+the pandemic, I’m no longer rewarding them exclusively with my dollars.&lt;/p&gt;
+
+&lt;p&gt;Now, I’ll use either, but I’m wary of 3rd party sellers, and always using some sort of fake review filter (https://reviewmeta.com or fakespot) for big ticket items.&lt;/p&gt;
+
+&lt;p&gt;So I’ll make a choice, order it up and see what happens!&lt;/p&gt;</content><author><name>edk</name></author><category term="personal" /><summary type="html">Goal Upgrade from 1G to 10GbE in my tiny home netowrk.</summary></entry><entry><title type="html">Github actions and CI</title><link href="https://edk.github.io/github-actions-and-ci/" rel="alternate" type="text/html" title="Github actions and CI" /><published>2021-09-30T00:00:00+00:00</published><updated>2021-09-30T00:00:00+00:00</updated><id>https://edk.github.io/github-actions-and-ci</id><content type="html" xml:base="https://edk.github.io/github-actions-and-ci/">&lt;p&gt;I always seem to find myself &lt;a href=&quot;https://www.techopedia.com/definition/15511/yak-shaving&quot;&gt;yak-shaving&lt;/a&gt;, and restarting this blog is no different.&lt;/p&gt;
+
+&lt;p&gt;If I just wanted to get a blog up, with minimal fuss, I could have used a free Wordpress site, or setup any number of free or low cost self-hosted options.&lt;/p&gt;
+
+&lt;p&gt;But for the challenge, and the free-as-in-beer side of me, I decided to try out &lt;a href=&quot;https://pages.github.com/&quot;&gt;Github pages&lt;/a&gt;.  And for extra difficulty points, I wanted to host the Jekyll source in a private Github repo, use Github Actions to build the Jekyll site, and deploy to the gh-pages branch of another public repo.&lt;/p&gt;
+
+&lt;p&gt;Took a few hours spread out over a couple of day.  Infrastructure related work always seems to take forever, due to the long feedback cycles.  Reminds me of the old days, waiting for make to finishing compiling and linking.
+&lt;img src=&quot;https://geekshumor.com/wp-content/uploads/2013/06/My-codes-compiling.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Or more recently, all the time I spent tending to Jenkins deployments.  Wow, I learned a lot, but that was painful in so many different ways.  I’ve been spoiled by Ruby and its fast feedback cycles, helping keep me in flow state.&lt;/p&gt;
+
+&lt;p&gt;Anyhow, some Docker files, a small bash script tying everything together, with a lot of head-scratching on how to use ssh auth instead of a &lt;a href=&quot;https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token&quot;&gt;personal access token&lt;/a&gt;, and I now have an automated setup to build and deploy a Jekyll site from a private repo.   No good reason for doing that, other than that I’m am stubborn sometimes, and like to try different things.&lt;/p&gt;
+
+&lt;p&gt;Now it’s time to brush up on my CSS and design chops, and start messing with the theme.&lt;/p&gt;
+
+&lt;p&gt;Also, it seems to take a minute or two from the deployment to the branch to when the changes show up in browser.  I guess I can’t complain, it’s all free!&lt;/p&gt;</content><author><name>edk</name></author><category term="github" /><category term="CI" /><summary type="html">I always seem to find myself yak-shaving, and restarting this blog is no different.</summary></entry><entry><title type="html">First post! (Kinda)</title><link href="https://edk.github.io/first-post/" rel="alternate" type="text/html" title="First post! (Kinda)" /><published>2021-09-21T00:00:00+00:00</published><updated>2021-09-21T00:00:00+00:00</updated><id>https://edk.github.io/first-post</id><content type="html" xml:base="https://edk.github.io/first-post/">&lt;h1 id=&quot;holá&quot;&gt;¡Holá!&lt;/h1&gt;
+
+&lt;p&gt;Hello unlikely visitor!  Welcome to the long-overdue reboot of my blog.&lt;/p&gt;
+
+&lt;p&gt;The first version of this was an experiment in 2012, with this new-fangled tool called Jekyll.&lt;/p&gt;
+
+&lt;p&gt;After a couple of cringe-worthy posts (not archived by the wayback machine, thankfully) I didn’t touch this again for a decade.&lt;/p&gt;
+
+&lt;p&gt;So here we are.  Playing around with Jekyll and Github Pages.&lt;/p&gt;
+
+&lt;p&gt;I expect most of the content to be technical in nature, mostly notes on stuff I’ve figured out, and written down so I don’t forget.  Hopefully google will index it so that future me can find it when needed.&lt;/p&gt;
+
+&lt;h2 id=&quot;notes-about-this-site-so-far&quot;&gt;Notes about this site so far&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;This is using github-pages, with jekyll and the &lt;a href=&quot;https://mademistakes.com/work/minimal-mistakes-jekyll-theme/&quot;&gt;minimal-mistakes theme&lt;/a&gt;, deployed using github actions.  All this is new to me, so I may be doing it wrong, or I may tear this out and re-do it in a fit of rage.&lt;/li&gt;
+  &lt;li&gt;I had to go through a number of different jekyll deployment actions in the github marketplace.  I haven’t used the marketplace before, so I was expecting more polish or at least a level of stability and working-ness that doesn’t seem to be there.  It gave me PTSD flashbacks to a dark time involving Jenkins plugins.  I cycled through a good number of actions, having to fork and modify them to get them working.  Also a bit scary from a security perspective.&lt;/li&gt;
+  &lt;li&gt;The theme looks nice and flexible, but has a pretty big surface area.  As a developer who needs to put a lot of effort into design, I want something to look nice out-of-the-box, but also easy to modify. A tough balance.&lt;/li&gt;
+  &lt;li&gt;Not sure why github doesn’t move to jekyll 4 or at least make the docs a bit more comprehensive for customerizers like me and up-to-date.  Maybe it’s just me, but anyone without a ton of experience could easily get frustrated.  Maybe that’s what they want?  MS owns it now.&lt;/li&gt;
+  &lt;li&gt;I like bullet points.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>edk</name></author><category term="site" /><category term="jekyll" /><category term="github" /><category term="docker" /><summary type="html">¡Holá!</summary></entry></feed>

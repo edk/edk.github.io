@@ -1,0 +1,765 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>10g Home Networking - edk Blogs</title>
+<meta name="description" content="Goal Upgrade from 1G to 10GbE in my tiny home netowrk.">
+
+
+  <meta name="author" content="edk">
+  
+  <meta property="article:author" content="edk">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="edk Blogs">
+<meta property="og:title" content="10g Home Networking">
+<meta property="og:url" content="https://edk.github.io/personal/10g-home-networking/">
+
+
+  <meta property="og:description" content="Goal Upgrade from 1G to 10GbE in my tiny home netowrk.">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2021-10-05T00:00:00+00:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://edk.github.io/personal/10g-home-networking/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "edk",
+      "url": "https://edk.github.io/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="edk Blogs Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="http://www.gravatar.com/avatar/94235e92ecebef654b5d1ac4c6c1889b" alt="edk Blogs"></a>
+        
+        <a class="site-title" href="/">
+          edk Blogs
+          <span class="site-subtitle">Version 2 of my blog and life</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/changelog">SiteChangelog</a>
+            </li><li class="masthead__menu-item">
+              <a href="/sitemap.xml">Sitemap</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="https://edk.github.io/">
+        <img src="/assets/images/128-2843_IMG-2.JPG" alt="edk" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="https://edk.github.io/" itemprop="url">edk</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>Techie, motorcyclist, poopie-head</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">SF Bay area</span>
+        </li>
+      
+
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="10g Home Networking">
+    <meta itemprop="description" content="GoalUpgrade from 1G to 10GbE in my tiny home netowrk.">
+    <meta itemprop="datePublished" content="2021-10-05T00:00:00+00:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="https://edk.github.io/personal/10g-home-networking/" class="u-url" itemprop="url">10g Home Networking
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2021-10-05T00:00:00+00:00">October 5, 2021</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#goal">Goal</a><ul><li><a href="#upgrade-from-1g-to-10gbe-in-my-tiny-home-netowrk">Upgrade from 1G to 10GbE in my tiny home netowrk.</a></li></ul></li></ul></li><li><a href="#current-setup">Current Setup</a></li><li><a href="#why">Why?</a></li><li><a href="#so-i-need">So I need</a></li></ul>
+
+            </nav>
+          </aside>
+        
+        <h2 id="goal">Goal</h2>
+<h4 id="upgrade-from-1g-to-10gbe-in-my-tiny-home-netowrk">Upgrade from 1G to 10GbE in my tiny home netowrk.</h4>
+
+<h2 id="current-setup">Current Setup</h2>
+<ul>
+  <li><a href="https://smile.amazon.com/gp/product/B08HDPWY96">Netgate 2100 running pfSense</a> and a <a href="https://smile.amazon.com/gp/product/B016XYQ3WK">UniFi UAP AC-PRO WiFi access point</a></li>
+  <li>SuperMicro based NAS/media center with i3 cpu, ECC RAM, ZFS filesystem, running containers, including <a href="https://pi-hole.net">Pi-hole</a>.</li>
+  <li>random netgear and d-link unmanaged switches</li>
+</ul>
+
+<h2 id="why">Why?</h2>
+
+<p>I switched to the pfSense/UniFi setup once it seemed the old Apple Airport Extreme was getting a little too long in the tooth.  It still worked fine, literally the only networking equipment of its kind to last me over a decade.  Most routers/modems die on me within a few years.  Netgear, d-link, etc, all seem to be poorly made, and worse, insecure and abandoned.  The Airport Extreme still had infrequent firmware updates up until the last couple of years of use, and no hardware hiccups whatsoever.  And I trust the quality of the firewall much more than the consumer grade swill that is pushed out.</p>
+
+<p>I considered getting a higher end router/wifi AP, and reflashing it with Open-WRT or Tomato firmware, but it seemed like too much work finding the highest quality hardware that was still available and compatible.</p>
+
+<p>One advantage of a separate router and access point is that the AP can be upgraded independently of the router for when <a href="https://www.intel.com/content/www/us/en/gaming/resources/wifi-6.html">Wi-Fi 6</a> (802.11ax) becomes more widely available.</p>
+
+<p>So while I wait for that to happen, I find myself wanting to upgrade the speed between my NAS and my other systems.  I’ve been using 1G forever now.  It seemed so fast when I first upgraded from 100Mb to 1G.  Now?</p>
+
+<p>Ugh.  So.  Slow.</p>
+
+<p>So let’s upgrade to 10G wired speeds.  100G would be nice, but the price is pretty high
+still.  Will need to wait for that to come down to consumer levels, I think.</p>
+
+<h2 id="so-i-need">So I need</h2>
+
+<p>A 10GbE switch.  I’d prefer unmanaged, as I don’t really need any of the bells and whistles, but it seems hard to find in this segment.  It’ll probably happen once the prices come down.  1G switches used to be multi-hundred dollars.  Now you can get a cheap one for $40.</p>
+
+<p>I’d prefer RJ45 connections, to avoid the extra expense and heat from SFP+ transceivers.
+The runs I’m currently in need of are less than 40FT, so simple twisted-pair should be fine.</p>
+
+<p>However, I need it to be <strong>quiet</strong>, since it’ll be sitting in my living space a few feet from my head. Aaannd I get super annoyed by most sounds.</p>
+
+<p>My options:</p>
+<table>
+<thead>
+  <tr>
+    <th> item </th>
+    <th> price </th>
+    <th> ports </th>
+    <th> notes </th>
+    <th> links </th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>
+    <img src="/assets/images/MikroTik 12-Port 10G Switch with Dual Power Supply.jpg" style="height: 5em" />
+    <a href="https://smile.amazon.com/gp/product/B07VS1XJZ6">MikroTik 12-Port 10G Switch with Dual Power Supply CRS312-4C+8XG-RM</a>
+    </td>
+    <td>$489</td>
+    <td>8 10G RJ45, 4 SFP+, 1 1G</td>
+    <td>noise at 42dba, reviews universally hate admin interface, dual power supply</td>
+    <td>
+    <a href="https://mikrotik.com/product/crs312_4c_8xg_rm">MFG</a>
+    <a href="https://www.youtube.com/watch?v=nDiUuJ472yE">YT</a>
+    </td>
+  </tr>
+
+  <tr>
+   <td>
+    <img src="/assets/images/CRS309-1G-8S+IN.jpg" style="height: 5em" />
+    <a href="https://smile.amazon.com/gp/product/B07NFXN4SS">MikroTik 9-Port Desktop Switch, 1 Gigabit Ethernet Port, 8 SFP+ 10Gbps Ports (CRS309-1G-8S+IN)</a>
+    </td>
+    <td>$240</td>
+    <td>8 10GbE, 1 1G</td>
+    <td>Silent!</td>
+    <td>
+    <a href="https://mikrotik.com/product/crs309_1g_8s_in">MFG</a>
+    <a href="https://www.youtube.com/watch?v=3uXSItOyB94">YT</a>
+    </td>
+  </tr>
+
+  <tr>
+   <td>
+    <a href="https://smile.amazon.com/gp/product/B07BV2VYVF">TRENDnet 8-Port 10G EdgeSmart Switch, 8 x 10GBASE-T Ports, Supports 2.5G-5G NBASE-T, 160Gbps Switch Capacity, 1U Rack Mountable, 10G Managed Network Switch, Lifetime Protection, Black, TEG-7080ES</a>
+    </td>
+    <td>$675</td>
+    <td>8 10GbE</td>
+    <td>quiet maybe? Lots of negative reviews, operational issues. Discontinued according to MFG site</td>
+    <td>
+    <a href="https://www.trendnet.com/products/managed-switch/8-Port-10G-EdgeSmart-Switch-TEG-7080ES">MFG</a>
+    </td>
+  </tr>
+
+  <tr>
+   <td>
+    <a href="https://smile.amazon.com/gp/product/B07CDJ9YGM">QNAP QSW-1208-8C-US 12-Port Unmanaged 10GbE Switch Twelve SFP+ with Shared Eight 10GBASE-T Ports</a>
+    </td>
+    <td>$620</td>
+    <td>12 SFP+, 8 SFP+/RJ45 all 10Gb</td>
+    <td>Silent.  Bad reviews, with lots of operational issues. no ipv6!</td>
+    <td><a href="https://www.qnap.com/en-us/product/qsw-1208-8c">MFG</a></td>
+  </tr>
+
+
+  <tr>
+   <td>
+    <a href="https://smile.amazon.com/gp/product/B08DKSFXNW">QNAP QSW-M408-4C 10GbE Managed Switch, with 4-Port 10GbE SFP+/RJ45 Combo and 8-Port Gigabit</a>
+    </td>
+    <td>$350</td>
+    <td>4 10GbE SFP+/RJ45, 8 1G RJ45</td>
+    <td>quiet, overall decent reviews.</td>
+    <td><a href="https://www.qnap.com/en/product/qsw-m408-4c">MFG</a></td>
+  </tr>
+
+  <tr>
+   <td>
+    <img src="/assets/images/ASUS XG-C100C 10G Network Adapte.png" style="height: 5em" />
+    <a href="https://smile.amazon.com/gp/product/B072N84DG6">ASUS XG-C100C 10G Network Adapter Pci-E X4 Card with Single RJ-45 Port</a>
+    </td>
+    <td>$93</td>
+    <td></td>
+    <td></td>
+    <td>
+    <a href="https://www.asus.com/us/Networking-IoT-Servers/Wired-Networking/All-series/XG-C100C/">MFG</a>
+    <a href="https://www.youtube.com/watch?v=8aqzd_jNj_s">comparing XG-C100C with Intel X550T1 (also $100 vs $330!)</a>
+    </td>
+  </tr>
+
+
+</tbody>
+</table>
+
+<p>Prices are from amazon.  Until recently, I used to exclusively buy from NewEgg for my
+tech purchases, due to their history of fighting patent trolls (yes, the lawyer
+who spearheaded that left the company long ago).  But now, with the greedy crap
+they’re pulling with GPUs during
+the pandemic, I’m no longer rewarding them exclusively with my dollars.</p>
+
+<p>Now, I’ll use either, but I’m wary of 3rd party sellers, and always using some sort of fake review filter (https://reviewmeta.com or fakespot) for big ticket items.</p>
+
+<p>So I’ll make a choice, order it up and see what happens!</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#personal" class="page__taxonomy-item p-category" rel="tag">personal</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2021-10-05T00:00:00+00:00">October 5, 2021</time></p>
+
+      </footer>
+
+      
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/github-actions-and-ci/" class="pagination--pager" title="Github actions and CI
+">Previous</a>
+    
+    
+      <a href="/personal/benchmarking-io/" class="pagination--pager" title="Benchmarking Io
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h2 class="page__related-title">You may also enjoy</h2>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/personal/the-joy-of-ruby-and-rails/" rel="permalink">The Joy Of Ruby And Rails
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2021-11-03T00:00:00+00:00">November 3, 2021</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+One thing that my curmudgeonly-self has had issues with lately (the past few years) is
+the pain I feel when dealing with the JS ecosystem.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/personal/followup-tailwind-and-status/" rel="permalink">Followup Tailwind And Status
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2021-11-03T00:00:00+00:00">November 3, 2021</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Not that anyone cares, I’m doing this as a kind of public journal and a way
+to keep myself honest, and continue to post, even when not much of note has
+happe...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/personal/the-joy-of-ruby-and-rails/" rel="permalink">The Joy Of Ruby And Rails
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2021-10-20T00:00:00+00:00">October 20, 2021</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/personal/omg-so-slow/" rel="permalink">Omg So Slow
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2021-10-19T00:00:00+00:00">October 19, 2021</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Just a short rant, and incredulity.  I must be doing something wrong, because why would
+anyone willingly put up with slow build times?
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+      <li><strong>Follow:</strong></li>
+
+      
+        
+      
+        
+      
+        
+          <li><a href="https://github.com/edk" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+      
+        
+      
+        
+      
+
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 edk. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
